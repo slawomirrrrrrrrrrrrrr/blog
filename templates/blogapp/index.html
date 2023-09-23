@@ -1,5 +1,14 @@
 {% extends "layaut.html" %}
 
 {%block content%}
-hi worlds and galaxi
+
+{% for p in posts %}
+    <div>
+        {{p.post_heder}}
+        {{p.category.Category_name}}
+        {{p.datetime}}
+    </div>
+    <br>
+{% endfor %}
+
 {%endblock%}
