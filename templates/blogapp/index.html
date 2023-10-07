@@ -3,10 +3,12 @@
 {%block content%}
 
 {% for p in posts %}
-    <div>
-        <a href="{{p.get_absolute_url}}">{{p.post_heder}}</a>
+    <div class="blogpost">
+        <a class ="link" href="{{p.get_absolute_url}}">{{p.post_heder}}</a>
         {{p.category.Category_name}}
-        {{p.datetime}}
+        <p class ="date">
+            {{p.datetime}}
+        </p>
     </div>
     <br>
 {% endfor %}
