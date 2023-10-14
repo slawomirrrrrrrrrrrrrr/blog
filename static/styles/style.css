@@ -24,3 +24,26 @@ header{
     color: rgb(161, 128, 192);
     float: right;
 }
+.nav-li{
+    display: inline-block;
+    margin-left: 3%;
+    
+}
+.nav-li{
+
+}
+.content{
+    margin: 20%;
+    width: 75%;
+}
+.content h2{
+    margin-left: 10%;
+    font-size: 410%;
+}
+.post_text{
+    border-top: 10px double rgb(103, 81, 122);
+    border-bottom:10px double rgb(103, 81, 122) ;
+}
+.post_text p{
+    font-size: 20px;
+}

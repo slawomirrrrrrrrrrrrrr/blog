@@ -1,11 +1,20 @@
 {%extends "layaut.html"%}
 
 {%block content%}
-{{post.post_heder}}
+<div class="content">
 
-<br>
-{{post.post_heder}}
-<br>
-{{post.autor}}
+    <h2>{{post.post_heder}}</h2>
+    <div class="post_text">
+    <br>
+    <p>
+        {{post.post_text}}
+    </p>
+    <br>
 
+    
+    автор поста:
+    {{post.author}}
+    </div>
+
+</div>
 {%endblock%}
