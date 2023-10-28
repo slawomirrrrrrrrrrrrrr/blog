@@ -1,0 +1,16 @@
+{% extends "layaut.html" %}
+
+{% block content %}
+
+<h1>список категорій</h1>
+
+<ul class="list-group my-list">
+    {%for categori in categori_list%}
+        <li class= "list-group-item my-list-item">
+            <a class="link" href="/?categori={{categori.Category_name}}"> {{categori.Category_name}}</a>
+        </li>
+    
+    {% endfor %}
+<ul>
+
+{% endblock content %}
